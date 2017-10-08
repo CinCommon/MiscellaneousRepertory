@@ -1,0 +1,13 @@
+将activiti-explorer解压在tomcat的webapps目录，配置conf下的server.xml文件，在host标签中加入：
+
+<Context docBase="E:\apache-tomcat-7.0.52\webapps\activiti-explorer" path="/activiti-explorer" reloadable="false"/>
+注意：保证docBsse目录的正确性。
+
+浏览：http://localhost:8080/activiti-explorer
+以 kermit/kermit登录
+演示版本中共有三个用户
+UserId	Password	Securityroles
+
+kermit	kermit		admin
+gonzo	gonzo		manager
+fozzie	fozzie		user
